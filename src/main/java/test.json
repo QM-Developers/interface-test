@@ -1,111 +1,23 @@
 {
   "result": [
     {
-      "count": 2,
-      "memberList": [
-        {
-          "departmentName": "后勤部",
-          "memberId": "0420cb22c06b43a488c39967779eecec",
-          "myTeamName": "青麦科技",
-          "positionName": "后勤人员",
-          "userIdentity": "101010101020202020",
-          "userImg": "",
-          "userName": "王五",
-          "userPhone": "13211112222",
-          "userSex": "男"
-        },
-        {
-          "departmentName": "后勤部",
-          "memberId": "5a27d0f892cd48a482622f8b76fd239c",
-          "myTeamName": "青麦科技",
-          "positionName": "后勤主管",
-          "userIdentity": "101010101020202020",
-          "userImg": "",
-          "userName": "王舞欣",
-          "userPhone": "13211113333",
-          "userSex": "女"
-        }
-      ],
-      "teamDepartmentId": "4bc0ec2d68a444e7a584b9f8d03cbc44",
-      "teamDepartmentName": "后勤部"
+      "assistTitle": "搞不定",
+      "assistReason": "太难搞",
+      "userName": "张三",
+      "assistId": "20a0d03c621b4ffcbd06b25f970e4e8e",
+      "userId": "89d9317fb3834353bcf2a507bee2eb82",
+      "createDate": 1505118139000
     },
     {
-      "count": 2,
-      "memberList": [
-        {
-          "departmentName": "业务部",
-          "memberId": "03ef5797bae2466699d5efc970a8962f",
-          "myTeamName": "青麦科技",
-          "positionName": "业务员",
-          "userIdentity": "101010101010101010",
-          "userImg": "",
-          "userName": "李四",
-          "userPhone": "13311112222",
-          "userSex": "男"
-        },
-        {
-          "departmentName": "业务部",
-          "memberId": "9f6bc79d769342f1b90ed0b532b870f2",
-          "myTeamName": "青麦科技",
-          "positionName": "业务主管",
-          "userIdentity": "101010101010101010",
-          "userImg": "",
-          "userName": "李思思",
-          "userPhone": "13311113333",
-          "userSex": "女"
-        }
-      ],
-      "teamDepartmentId": "5a20e0ea32b948c08c928995b26af64e",
-      "teamDepartmentName": "业务部"
-    },
-    {
-      "count": 1,
-      "memberList": [
-        {
-          "departmentName": "总经办",
-          "memberId": "89d9317fb3834353bcf2a507bee2eb82",
-          "myTeamName": "青麦科技",
-          "positionName": "负责人",
-          "userIdentity": "000000000000000000",
-          "userImg": "/upload/img/user/head_portrait/89d9317fb3834353bcf2a507bee2eb82/165b159a27544fba89533d5d22adae7c.jpg",
-          "userName": "张三",
-          "userPhone": "13688888888",
-          "userSex": "男"
-        }
-      ],
-      "teamDepartmentId": "9e8d946ef94b4795bd9218795354e631",
-      "teamDepartmentName": "总经办"
-    },
-    {
-      "count": 2,
-      "memberList": [
-        {
-          "departmentName": "财务部",
-          "memberId": "528832fa9cc54d0290f6ee2922b27256",
-          "myTeamName": "青麦科技",
-          "positionName": "财务员",
-          "userIdentity": "101010101020202020",
-          "userImg": "",
-          "userName": "赵柳燕",
-          "userPhone": "13511113333",
-          "userSex": "女"
-        },
-        {
-          "departmentName": "财务部",
-          "memberId": "bed87f05893440698bf6d01028ea7c6a",
-          "myTeamName": "青麦科技",
-          "positionName": "财务主管",
-          "userIdentity": "101010101020202020",
-          "userImg": "",
-          "userName": "赵六",
-          "userPhone": "13511112222",
-          "userSex": "男"
-        }
-      ],
-      "teamDepartmentId": "dc89587b44ff4652b44f81da12589175",
-      "teamDepartmentName": "财务部"
+      "assistTitle": "10001",
+      "assistReason": "10001",
+      "userName": "张三",
+      "assistId": "ec763147d35c4ab285fbcba67ca57a30",
+      "userId": "89d9317fb3834353bcf2a507bee2eb82",
+      "createDate": 1508408427000
     }
   ],
+  "pageCount": 2,
   "state": 1,
   "token": "da8990b107b84cf980035927cce112721507599537351"
 }

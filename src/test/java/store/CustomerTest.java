@@ -21,16 +21,427 @@ public class CustomerTest
 //            String result = listCustomer();
 //            String result = updateCustomer();
 //            String result = getCustomer();
+//            String result = saveRepertoryLevel();
+//            String result = listMerchandiser();
+//            String result = listPromoter();
+//            String result = updateCustomerToPromoter();
+//            String result = updateCustomerToMerchandiser();
+//            String result = listAccountChecker();
+//            String result = saveCustomerAccount();
+//            String result = listCustomerAccountByProposer();
+//            String result = listCustomerAccountByChecker();
+            String result = getCustomerAccount();
+//            String result = updateCustomerAccountRefuse();
+//            String result = updateCustomerAccountAccept();
+//            String result = updateCustomerFreeze();
+//            String result = updateCustomerUnfreeze();
+
 //            saveFrontImage();
 //            saveBackImage();
 //            saveHandImage();
-            getCustomerIDCard();
+//            getCustomerIDCard();
 
-//            System.out.println(result);
+            System.out.println(result);
         } catch (IOException e)
         {
             e.printStackTrace();
         }
+    }
+
+    private static String getCustomerAccount() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/getCustomerAccount" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+        params.put("requestId", "320cd46e93004f12890dba46bf0d2a4d");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String updateCustomerUnfreeze() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateCustomerUnfreeze" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+        params.put("customerId", "94a397ea0eae4632994108c02fe3b762");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String updateCustomerFreeze() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateCustomerFreeze" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+        params.put("customerId", "94a397ea0eae4632994108c02fe3b762");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String updateCustomerAccountAccept() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateCustomerAccountAccept" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+        params.put("requestId", "7c2c30d5d1ef49289f10f21de4e1ed5e");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String updateCustomerAccountRefuse() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateCustomerAccountRefuse" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+        params.put("requestId", "320cd46e93004f12890dba46bf0d2a4d");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String listCustomerAccountByChecker() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/listCustomerAccountByChecker" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String listCustomerAccountByProposer() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/listCustomerAccountByProposer" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "03ef5797bae2466699d5efc970a8962f");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String saveCustomerAccount() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/saveCustomerAccount" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "03ef5797bae2466699d5efc970a8962f");
+        params.put("token", IDGenerator.generator());
+        params.put("customerId", "94a397ea0eae4632994108c02fe3b762");
+        params.put("customerName", "alisa");
+        params.put("merchandiserId", "5a27d0f892cd48a482622f8b76fd239c");
+        params.put("merchandiserName", "王舞欣");
+        params.put("checkerId", "9f6bc79d769342f1b90ed0b532b870f2");
+        params.put("checkerName", "李思思");
+        params.put("requestReason", "啊");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String listAccountChecker() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/listAccountChecker" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "03ef5797bae2466699d5efc970a8962f");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String updateCustomerToMerchandiser() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateCustomerToMerchandiser" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "03ef5797bae2466699d5efc970a8962f");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+        params.put("customerId", "94a397ea0eae4632994108c02fe3b762");
+        params.put("merchandiserId", "528832fa9cc54d0290f6ee2922b27256");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String updateCustomerToPromoter() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateCustomerToPromoter" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "03ef5797bae2466699d5efc970a8962f");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+        params.put("customerId", "94a397ea0eae4632994108c02fe3b762");
+        params.put("promoterId", "d88e28c3a0e6429f9f1d03ad99fabc61");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String listPromoter() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/listPromoter" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "d88e28c3a0e6429f9f1d03ad99fabc61");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String listMerchandiser() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/listMerchandiser" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "d88e28c3a0e6429f9f1d03ad99fabc61");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+        params.put("customerType", "personal");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String saveRepertoryLevel() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/saveRepertoryLevel" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "d88e28c3a0e6429f9f1d03ad99fabc61");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+        params.put("customerType", "personal");
+        params.put("repertoryType", "1");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
     }
 
     private static String saveCustomerRecord() throws IOException

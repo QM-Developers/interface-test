@@ -1,26 +1,23 @@
-package common;
+package store;
 
 import com.alibaba.fastjson.JSONObject;
 import constant.CoreConstant;
 import okhttp3.*;
-import util.CryptographyUtil;
 import util.IDGenerator;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class RegisterTest
+public class CustomerFollowTest
 {
     public static void main(String[] args)
     {
-//        insertCardFront();
         try
         {
-//            String result = registerGetVerify();
-//            String result = registerVerify();
-            String result = register();
-
+//            String result = saveCustomerFollow();
+//            String result = listCustomerFollow();
+//            String result = updateCustomerFollow();
+            String result = getCustomerFollow();
 
             System.out.println(result);
         } catch (IOException e)
@@ -29,126 +26,122 @@ public class RegisterTest
         }
     }
 
-    private static String registerGetVerify() throws IOException
+    private static String getCustomerFollow() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/registerGetVerify" + CoreConstant.URL_SUFFIX;
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/getCustomerFollow" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
 
-        params.put("userPhone", "13688888888");
-        params.put("myTeamId", "10001");
-
-        System.out.println(params.toJSONString());
-
-        FormBody.Builder builder = new FormBody.Builder();
-
-        for (String key : params.keySet())
-            builder.add(key, params.get(key).toString());
-
-        Request request = new Request.Builder().post(builder.build()).url(url).build();
-        Call call = okHttpClient.newCall(request);
-        Response response = call.execute();
-        if (response.isSuccessful())
-            return response.body().string();
-        else
-            return String.valueOf(response.code());
-    }
-
-    private static String registerVerify() throws IOException
-    {
-        String url = CoreConstant.URL_BASE_LOCAL + "/registerVerify" + CoreConstant.URL_SUFFIX;
-        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
-
-        JSONObject params = new JSONObject();
-
-        params.put("userPhone", "13688888888");
-        params.put("myTeamId", "10001");
-        params.put("verify", "10001");
-
-        System.out.println(params.toJSONString());
-
-        FormBody.Builder builder = new FormBody.Builder();
-
-        for (String key : params.keySet())
-            builder.add(key, params.get(key).toString());
-
-        Request request = new Request.Builder().post(builder.build()).url(url).build();
-        Call call = okHttpClient.newCall(request);
-        Response response = call.execute();
-        if (response.isSuccessful())
-            return response.body().string();
-        else
-            return String.valueOf(response.code());
-    }
-
-    private static String register() throws IOException
-    {
-        String url = CoreConstant.URL_BASE_LOCAL + "/register" + CoreConstant.URL_SUFFIX;
-        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
-
-        JSONObject params = new JSONObject();
-
-        params.put("userId", "0bb4b24df33948cfb68e61c1d5c1c75d");
-        params.put("userPassword", CryptographyUtil.md5("dggadmin", null));
-
-        System.out.println(params.toJSONString());
-
-        FormBody.Builder builder = new FormBody.Builder();
-
-        for (String key : params.keySet())
-            builder.add(key, params.get(key).toString());
-
-        Request request = new Request.Builder().post(builder.build()).url(url).build();
-        Call call = okHttpClient.newCall(request);
-        Response response = call.execute();
-        if (response.isSuccessful())
-            return response.body().string();
-        else
-            return String.valueOf(response.code());
-    }
-
-    private static void insertCardFront()
-    {
-        String url = CoreConstant.URL_BASE_LOCAL + "/insertCardFront" + CoreConstant.URL_SUFFIX;
-        OkHttpClient okHttpClient = new OkHttpClient();
-        File file = new File("C:\\Users\\Administrator\\Desktop\\temp\\wallhaven-513297.jpg");
-
-        JSONObject params = new JSONObject();
-        params.put("userId", "89d9317fb3834353bcf2a507bee2eb82");
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
-        params.put("cardFront", "图片");
+        params.put("followId", "4231e8124e9247139d095044b5f83a08");
 
         System.out.println(params.toJSONString());
-        params.remove("cardFront");
 
-        MultipartBody.Builder builder = new MultipartBody.Builder();
-        builder.setType(MultipartBody.FORM);
+        FormBody.Builder builder = new FormBody.Builder();
+
         for (String key : params.keySet())
-            builder.addFormDataPart(key, params.get(key).toString());
+            builder.add(key, params.get(key).toString());
 
-        builder.addFormDataPart("cardFront", file.getName(), RequestBody.create(MediaType.parse("image/png"), file));
-        RequestBody requestBody = builder.build();
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
 
-        Request request = new Request.Builder()
-                .url(url)
-                .post(requestBody)
-                .build();
+    private static String updateCustomerFollow() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateCustomerFollow" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
-        okHttpClient.newCall(request).enqueue(new Callback()
-        {
-            @Override
-            public void onFailure(Call call, IOException e)
-            {
+        JSONObject params = new JSONObject();
 
-            }
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+        params.put("followId", "4231e8124e9247139d095044b5f83a08");
+        params.put("followResult", "followResult");
 
-            @Override
-            public void onResponse(Call call, Response response) throws IOException
-            {
-                System.out.println(response.body().string());
-            }
-        });
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String listCustomerFollow() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/listCustomerFollow" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+        params.put("customerId", "94a397ea0eae4632994108c02fe3b762");
+        params.put("pageNum", "1");
+        params.put("pageSize", "10");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String saveCustomerFollow() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/saveCustomerFollow" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+        params.put("customerId", "94a397ea0eae4632994108c02fe3b762");
+        params.put("customerName", "alisa");
+        params.put("followTitle", "跟进测试");
+        params.put("followDate", "2017-12-12");
+        params.put("followContent", "忘记去了");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
     }
 }

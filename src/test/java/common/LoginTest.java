@@ -15,8 +15,8 @@ public class LoginTest
     {
         try
         {
-//            String result = login();
-            String result = loginOnBrowser();
+            String result = login();
+//            String result = loginOnBrowser();
 
             System.out.println(result);
         } catch (IOException e)
@@ -59,7 +59,7 @@ public class LoginTest
 
         JSONObject params = new JSONObject();
 
-        params.put("userPhone", "13688888888");
+        params.put("userPhone", "13598765678");
         params.put("userPassword", CryptographyUtil.md5("dggadmin", null));
         params.put("myTeamId", "10001");
         params.put("deviceToken", IDGenerator.generator());
