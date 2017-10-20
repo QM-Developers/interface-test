@@ -167,7 +167,7 @@ public class UserBreedTest
         params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
-        params.put("userPlaceId", "b76ddc7446fa4e108ecaacc4a1d16bc7");
+        params.put("userPlaceId", "daab4edac0fa48d5b62f6c241f5dd590");
         params.put("json", json.toJSONString());
 
         System.out.println(params.toJSONString());

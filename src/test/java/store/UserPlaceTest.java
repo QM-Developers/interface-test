@@ -126,6 +126,7 @@ public class UserPlaceTest
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
         params.put("img", "图片");
+        params.put("userPlaceId", "daab4edac0fa48d5b62f6c241f5dd590");
 
         System.out.println(params.toJSONString());
         params.remove("img");

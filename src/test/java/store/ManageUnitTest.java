@@ -14,8 +14,8 @@ public class ManageUnitTest
     {
         try
         {
-//            String result = saveManageUnit();
-            String result = listManageUnit();
+            String result = saveManageUnit();
+//            String result = listManageUnit();
 //            String result = updateManageUnit();
 //            String result = getManageUnit();
 //            String result = removeManageUnit();
