@@ -1,23 +1,36 @@
 {
   "result": [
     {
-      "assistTitle": "搞不定",
-      "assistReason": "太难搞",
-      "userName": "张三",
-      "assistId": "20a0d03c621b4ffcbd06b25f970e4e8e",
-      "userId": "89d9317fb3834353bcf2a507bee2eb82",
-      "createDate": 1505118139000
-    },
-    {
-      "assistTitle": "10001",
-      "assistReason": "10001",
-      "userName": "张三",
-      "assistId": "ec763147d35c4ab285fbcba67ca57a30",
-      "userId": "89d9317fb3834353bcf2a507bee2eb82",
-      "createDate": 1508408427000
+      "acceptDate": 1508568923000,
+      "branchId": "0f3965187f1d4bbf963453b7a2ae0b20",
+      "myTeamId": "10001",
+      "approverId": "5a27d0f892cd48a482622f8b76fd239c",
+      "applyList": [
+        {
+          "applyId": "6f2688117af64bff81edd3994314c225",
+          "standardName": "100g/袋",
+          "goodsId": "bae0a50f935248cfa03a0e0cbffd2dda",
+          "currentCount": 246,
+          "standardId": "8e6aabae569e44ca80db3115372aa1a4",
+          "goodsImage": "/upload/img/user/space/89d9317fb3834353bcf2a507bee2eb82/f4845d04353643989e87cb129e01670d.jpg",
+          "goodsCode": "S119",
+          "goodsName": "【哼哼动保】10%酸化阿莫西林可溶性粉 100g/袋",
+          "goodsType": "兽药大礼包",
+          "standardCount": 10
+        }
+      ],
+      "branchName": "鹤山销售点",
+      "proposerId": "9f6bc79d769342f1b90ed0b532b870f2",
+      "approverName": "王舞欣",
+      "applyId": "6f2688117af64bff81edd3994314c225",
+      "proposerName": "李思思",
+      "applyRemark": "备注",
+      "applyCode": "201710214126",
+      "applyStatus": 11,
+      "createDate": 1508568026000
     }
   ],
-  "pageCount": 2,
+  "pageCount": 1,
   "state": 1,
-  "token": "da8990b107b84cf980035927cce112721507599537351"
+  "token": "afc5f8d65cf440a1b58a5f2295361fa01507604201402"
 }
