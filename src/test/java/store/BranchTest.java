@@ -19,13 +19,138 @@ public class BranchTest
 //            String result = getRepertory();
 //            String result = getFirstRepertory();
 //            String result = listRepertoryByKeyword();
-            String result = getFirstBranchId();
+//            String result = getFirstBranchId();
+//            String result = addBranch();
+//            String result = getBranch();
+//            String result = updateBranch();
+            String result = removeBranch();
 
             System.out.println(result);
         } catch (IOException e)
         {
             e.printStackTrace();
         }
+    }
+
+    private static String removeBranch() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/removeBranch" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "89d9317fb3834353bcf2a507bee2eb82");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+        params.put("branchId", "0ecfc2fe4ede4800bbb4087231720db2");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String updateBranch() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateBranch" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "89d9317fb3834353bcf2a507bee2eb82");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+        params.put("branchId", "0ecfc2fe4ede4800bbb4087231720db2");
+        params.put("branchName", "江门销售点2");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String getBranch() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/getBranch" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "89d9317fb3834353bcf2a507bee2eb82");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+        params.put("branchId", "0ecfc2fe4ede4800bbb4087231720db2");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String addBranch() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/addBranch" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "89d9317fb3834353bcf2a507bee2eb82");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+        params.put("token", "10001");
+        params.put("branchName", "江门销售点");
+        params.put("branchArea", "江门");
+        params.put("departmentId", "dc89587b44ff4652b44f81da12589175");
+        params.put("departmentName", "财务部");
+        params.put("managerId", "528832fa9cc54d0290f6ee2922b27256");
+        params.put("managerName", "赵柳燕");
+        params.put("managerPhone", "13511113333");
+        params.put("latLng", "100,01");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
     }
 
     private static String getFirstBranchId() throws IOException
