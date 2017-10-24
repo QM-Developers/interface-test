@@ -11,16 +11,23 @@ import java.util.concurrent.TimeUnit;
 
 public class UserPlaceTest
 {
+    private static final String BASE_URL = CoreConstant.URL_BASE_LOCAL;
+
     public static void main(String[] args)
     {
         try
         {
 //            String result = saveUserPlace();
-            String result = listUserPlace();
+//            String result = listUserPlace();
 //            String result = updateUserPlace();
-//            String result = uploadPlaceEnvironment();
-//            String result = uploadPlaceCertificate();
-//            String result = getUserPlace();
+//            for (int i = 0; i < 5; i++)
+//            {
+//                String result = saveUserPlace();
+//                String result = uploadPlaceCertificate();
+//                String result = uploadPlaceEnvironment();
+//                System.out.println(result);
+//            }
+            String result = getUserPlace();
 //            String result = removePlaceImage();
 //            String result = removeUserPlace();
 
@@ -33,7 +40,7 @@ public class UserPlaceTest
 
     private static String removeUserPlace() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/removeUserPlace" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/removeUserPlace" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -41,7 +48,7 @@ public class UserPlaceTest
         params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
-        params.put("userPlaceId", "582c2eecfffc42ac939ad146247c0f3f");
+        params.put("userPlaceId", "60eadb87fe8146cf8c3b219940e89bb7");
 
         System.out.println(params.toJSONString());
 
@@ -61,12 +68,12 @@ public class UserPlaceTest
 
     private static String removePlaceImage() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/removePlaceImage" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/removePlaceImage" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
 
-        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
+        params.put("userId", "580e6b11712d481ba38b307bf47b6966");
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
         params.put("imgId", "5c4151870c3b4551a37191b934e2e483");
@@ -89,7 +96,7 @@ public class UserPlaceTest
 
     private static String getUserPlace() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/getUserPlace" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/getUserPlace" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -97,7 +104,7 @@ public class UserPlaceTest
         params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
-        params.put("userPlaceId", "582c2eecfffc42ac939ad146247c0f3f");
+        params.put("userPlaceId", "daab4edac0fa48d5b62f6c241f5dd590");
 
         System.out.println(params.toJSONString());
 
@@ -117,7 +124,7 @@ public class UserPlaceTest
 
     private static String uploadPlaceEnvironment() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/uploadPlaceEnvironment" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/uploadPlaceEnvironment" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient();
         File file = new File("C:\\Users\\Administrator\\Desktop\\temp\\wallhaven-513297.jpg");
 
@@ -147,7 +154,7 @@ public class UserPlaceTest
 
     private static String uploadPlaceCertificate() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/uploadPlaceCertificate" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/uploadPlaceCertificate" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient();
         File file = new File("C:\\Users\\Administrator\\Desktop\\temp\\wallhaven-513297.jpg");
 
@@ -156,7 +163,7 @@ public class UserPlaceTest
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
         params.put("img", "图片");
-        params.put("userPlaceId", "582c2eecfffc42ac939ad146247c0f3f");
+        params.put("userPlaceId", "221f72d9b8ab494aa38a6b3e4587e374");
 
         System.out.println(params.toJSONString());
         params.remove("img");
@@ -177,7 +184,7 @@ public class UserPlaceTest
 
     private static String updateUserPlace() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateUserPlace" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/updateUserPlace" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -207,7 +214,7 @@ public class UserPlaceTest
 
     private static String saveUserPlace() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/saveUserPlace" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/saveUserPlace" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -215,7 +222,7 @@ public class UserPlaceTest
         params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
-        params.put("customerId", "94a397ea0eae4632994108c02fe3b762");
+        params.put("customerId", "613dcfbf5ceb4b5893849bf454a3244d");
         params.put("userPlaceArea", "鹤山");
         params.put("userPlaceAcreage", "142");
 
@@ -237,7 +244,7 @@ public class UserPlaceTest
 
     private static String listUserPlace() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/listUserPlace" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/listUserPlace" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -245,7 +252,6 @@ public class UserPlaceTest
         params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
-        params.put("customerId", "94a397ea0eae4632994108c02fe3b762");
         params.put("customerId", "94a397ea0eae4632994108c02fe3b762");
         params.put("pageNum", "1");
         params.put("pageSize", "10");

@@ -1,18 +1,65 @@
 {
-  "result": [
-    {
-      "startPrice": 600.0,
-      "startRange": 65.0,
-      "myTeamId": "10001",
-      "freightId": "a9dbba21bdcb4100968e8bd000878bae",
-      "increaseRange": 62.0,
-      "weightAllowance": 65.0,
-      "increasePrice": 60.0,
-      "userId": "89d9317fb3834353bcf2a507bee2eb82",
-      "freightName": "小卡车"
-    }
-  ],
-  "pageCount": 1,
+  "result": {
+    "certificateList": [],
+    "customerId": "94a397ea0eae4632994108c02fe3b762",
+    "environmentList": [
+      {
+        "imgId": "192d4362a6554e9a9f2008ab23d110de",
+        "imgType": 1,
+        "imgUrl": "/upload/img/user/place/\\d0828d61fae1406299deb0fa9a142b06.jpg",
+        "userPlaceId": "daab4edac0fa48d5b62f6c241f5dd590"
+      },
+      {
+        "imgId": "3cee73f9492842b9bea155184d1409ae",
+        "imgType": 1,
+        "imgUrl": "/upload/img/user/place/\\ad939c4623b8464ea4fad0b9b6fca48c.jpg",
+        "userPlaceId": "daab4edac0fa48d5b62f6c241f5dd590"
+      },
+      {
+        "imgId": "62311762a7354b2ba2b4e60166ace177",
+        "imgType": 1,
+        "imgUrl": "/upload/img/user/place/\\7d014dfb8a20412882dfd75243652a77.jpg",
+        "userPlaceId": "daab4edac0fa48d5b62f6c241f5dd590"
+      },
+      {
+        "imgId": "7ee13dba37994d4bad65e45e4d411b43",
+        "imgType": 1,
+        "imgUrl": "/upload/img/user/place/\\1a17cbeec8ab4b64b3f8c83c0e36c6fa.jpg",
+        "userPlaceId": "daab4edac0fa48d5b62f6c241f5dd590"
+      },
+      {
+        "imgId": "8c43338bdfb942bd80725066b54d215a",
+        "imgType": 1,
+        "imgUrl": "/upload/img/user/place/\\995504a614ea461f9023d9450ffacdcc.jpg",
+        "userPlaceId": "daab4edac0fa48d5b62f6c241f5dd590"
+      },
+      {
+        "imgId": "c210c3a3b7a74f349e5e9cd0a9c7f65f",
+        "imgType": 1,
+        "imgUrl": "/upload/img/user/place/\\3d7cfa43aa684985beefad33e36b5d5e.jpg",
+        "userPlaceId": "daab4edac0fa48d5b62f6c241f5dd590"
+      },
+      {
+        "imgId": "f5478db642fa498ab0c53490ea540ca6",
+        "imgType": 1,
+        "imgUrl": "/upload/img/user/place/\\21b71bb30dff4f0485d97ccaa608d0cc.jpg",
+        "userPlaceId": "daab4edac0fa48d5b62f6c241f5dd590"
+      },
+      {
+        "imgId": "fc0f459279b648438eeeefaaf1ed73cf",
+        "imgType": 1,
+        "imgUrl": "/upload/img/user/place/\\026c8e7d4db94d71afe13fbd0ab41523.jpg",
+        "userPlaceId": "daab4edac0fa48d5b62f6c241f5dd590"
+      }
+    ],
+    "userAlreadyUse": 0,
+    "userEmployeeNum": 0,
+    "userOwnerNum": 0,
+    "userPlaceAcreage": 142,
+    "userPlaceArea": "鹤山",
+    "userPlaceId": "daab4edac0fa48d5b62f6c241f5dd590",
+    "userPlaceType": ""
+  },
   "state": 1,
   "token": "c918451b778c44dc8ffcf7b7f6bb65621507604205889"
 }

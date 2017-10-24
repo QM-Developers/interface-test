@@ -70,6 +70,7 @@ public class CustomerAssistTest
         params.put("myTeamId", "10001");
         params.put("pageNum", "1");
         params.put("pageSize", "10");
+        params.put("status", "1");
 
         System.out.println(params.toJSONString());
 
