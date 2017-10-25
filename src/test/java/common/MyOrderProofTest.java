@@ -18,11 +18,11 @@ public class MyOrderProofTest
     {
         try
         {
-//            String result = saveOrderProof();
+            String result = saveOrderProof();
 //            String result = listOrderProof();
-            getProofImage();
+//            getProofImage();
 
-//            System.out.println(result);
+            System.out.println(result);
         } catch (IOException e)
         {
             e.printStackTrace();
@@ -122,7 +122,7 @@ public class MyOrderProofTest
         params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
-        params.put("orderId", "580e6b11712d481ba38b307bf47b6966");
+        params.put("orderId", "40649b0e97864417915fcc8cadcd331f");
         params.put("img", "图片");
 
         System.out.println(params.toJSONString());

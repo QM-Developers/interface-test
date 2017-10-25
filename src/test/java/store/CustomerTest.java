@@ -30,11 +30,12 @@ public class CustomerTest
 //            String result = saveCustomerAccount();
 //            String result = listCustomerAccountByProposer();
 //            String result = listCustomerAccountByChecker();
-            String result = getCustomerAccount();
+//            String result = getCustomerAccount();
 //            String result = updateCustomerAccountRefuse();
 //            String result = updateCustomerAccountAccept();
 //            String result = updateCustomerFreeze();
 //            String result = updateCustomerUnfreeze();
+            String result = listRepertoryLevel();
 
 //            saveFrontImage();
 //            saveBackImage();
@@ -46,6 +47,33 @@ public class CustomerTest
         {
             e.printStackTrace();
         }
+    }
+
+    private static String listRepertoryLevel() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/listRepertoryLevel" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
+        params.put("token", IDGenerator.generator());
+        params.put("myTeamId", "10001");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
     }
 
     private static String getCustomerAccount() throws IOException

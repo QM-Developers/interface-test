@@ -8,16 +8,15 @@ import util.IDGenerator;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class FinanceOrderTest
+public class SalesOrderTest
 {
     public static void main(String[] args)
     {
         try
         {
-//            String result = listFinanceOrderSelective();
-//            String result = updateFinancePass();
-            String result = updateFinanceFail();
-//            String result = updateRefundMoney();
+//            String result = listOrderSelective();
+//            String result = listSales();
+            String result = listOrderSelectiveByManager();
 
             System.out.println(result);
         } catch (IOException e)
@@ -26,17 +25,18 @@ public class FinanceOrderTest
         }
     }
 
-    private static String updateRefundMoney() throws IOException
+    private static String listOrderSelectiveByManager() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateRefundMoney" + CoreConstant.URL_SUFFIX;
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/sales/listOrderSelectiveByManager" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
 
-        params.put("userId", "0420cb22c06b43a488c39967779eecec");
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
-        params.put("orderId", "1ee46bbd9f9b4462b2256aac46f0d3e1");
+        params.put("pageNum", "1");
+        params.put("pageSize", "10");
 
         System.out.println(params.toJSONString());
 
@@ -54,17 +54,16 @@ public class FinanceOrderTest
             return String.valueOf(response.code());
     }
 
-    private static String updateFinanceFail() throws IOException
+    private static String listSales() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateFinanceFail" + CoreConstant.URL_SUFFIX;
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/sales/listSales" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
 
-        params.put("userId", "0420cb22c06b43a488c39967779eecec");
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
-        params.put("orderId", "86ecddac993a4220961f805ac6c0d26c");
 
         System.out.println(params.toJSONString());
 
@@ -82,45 +81,16 @@ public class FinanceOrderTest
             return String.valueOf(response.code());
     }
 
-    private static String updateFinancePass() throws IOException
+    private static String listOrderSelective() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateFinancePass" + CoreConstant.URL_SUFFIX;
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/sales/listOrderSelective" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
 
-        params.put("userId", "0420cb22c06b43a488c39967779eecec");
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
-        params.put("orderId", "1ee46bbd9f9b4462b2256aac46f0d3e1");
-
-        System.out.println(params.toJSONString());
-
-        FormBody.Builder builder = new FormBody.Builder();
-
-        for (String key : params.keySet())
-            builder.add(key, params.get(key).toString());
-
-        Request request = new Request.Builder().post(builder.build()).url(url).build();
-        Call call = okHttpClient.newCall(request);
-        Response response = call.execute();
-        if (response.isSuccessful())
-            return response.body().string();
-        else
-            return String.valueOf(response.code());
-    }
-
-    private static String listFinanceOrderSelective() throws IOException
-    {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/listFinanceOrderSelective" + CoreConstant.URL_SUFFIX;
-        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
-
-        JSONObject params = new JSONObject();
-
-        params.put("userId", "0420cb22c06b43a488c39967779eecec");
-        params.put("token", IDGenerator.generator());
-        params.put("myTeamId", "10001");
-        params.put("orderStatus", "90");
         params.put("pageNum", "1");
         params.put("pageSize", "10");
 

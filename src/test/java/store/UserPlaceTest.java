@@ -104,7 +104,7 @@ public class UserPlaceTest
         params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
-        params.put("userPlaceId", "daab4edac0fa48d5b62f6c241f5dd590");
+        params.put("userPlaceId", "221f72d9b8ab494aa38a6b3e4587e374");
 
         System.out.println(params.toJSONString());
 
