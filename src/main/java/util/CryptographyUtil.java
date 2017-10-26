@@ -55,4 +55,15 @@ public class CryptographyUtil
     {
         return new Md5Hash(str, salt).toString();
     }
+
+    /**
+     * Md5加密
+     *
+     * @param str
+     * @return
+     */
+    public static String md5(String str)
+    {
+        return new Md5Hash(str).toString();
+    }
 }

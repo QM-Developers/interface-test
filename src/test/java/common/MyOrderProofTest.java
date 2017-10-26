@@ -18,7 +18,8 @@ public class MyOrderProofTest
     {
         try
         {
-            String result = saveOrderProof();
+//            String result = saveOrderProof();
+            String result = removeOrderProof();
 //            String result = listOrderProof();
 //            getProofImage();
 
@@ -27,6 +28,34 @@ public class MyOrderProofTest
         {
             e.printStackTrace();
         }
+    }
+
+    private static String removeOrderProof() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/user_removeOrderProof" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "89d9317fb3834353bcf2a507bee2eb82");
+        params.put("myTeamId", "10001");
+        params.put("token", "1");
+        params.put("proofId", "9f2a3f850d17408fa82884678e13bb12");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
     }
 
     private static void getProofImage() throws IOException

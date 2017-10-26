@@ -22,7 +22,7 @@ public class CustomerTest
 //            String result = updateCustomer();
 //            String result = getCustomer();
 //            String result = saveRepertoryLevel();
-//            String result = listMerchandiser();
+            String result = listMerchandiser();
 //            String result = listPromoter();
 //            String result = updateCustomerToPromoter();
 //            String result = updateCustomerToMerchandiser();
@@ -35,7 +35,7 @@ public class CustomerTest
 //            String result = updateCustomerAccountAccept();
 //            String result = updateCustomerFreeze();
 //            String result = updateCustomerUnfreeze();
-            String result = listRepertoryLevel();
+//            String result = listRepertoryLevel();
 
 //            saveFrontImage();
 //            saveBackImage();
@@ -513,12 +513,12 @@ public class CustomerTest
 
         JSONObject params = new JSONObject();
 
-        params.put("userId", "d88e28c3a0e6429f9f1d03ad99fabc61");
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
         params.put("pageNum", "1");
         params.put("pageSize", "10");
-//        params.put("customerType", "鹤山市");
+        params.put("customerType", "personal");
 
         System.out.println(params.toJSONString());
 

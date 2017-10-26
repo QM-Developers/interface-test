@@ -1,12 +1,14 @@
 {
   "result": [
     {
-      "userId": "03ef5797bae2466699d5efc970a8962f",
-      "userName": "李四"
+      "customerType": "personal",
+      "myTeamId": "10001",
+      "repertoryType": 1
     },
     {
-      "userId": "9f6bc79d769342f1b90ed0b532b870f2",
-      "userName": "李思思"
+      "customerType": "dealer",
+      "myTeamId": "10001",
+      "repertoryType": 2
     }
   ],
   "state": 1,
