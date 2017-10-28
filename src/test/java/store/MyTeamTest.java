@@ -14,13 +14,13 @@ public class MyTeamTest
     {
         try
         {
-            String result = listDepartmentAndMember();
+//            String result = listDepartmentAndMember();
 //            String result = listAllMember();
 //            String result = listTeamDepartment();
 //            String result = findDepartmentDetail();
 //            String result = findDepartmentMember();
 //            String result = getDepartmentMember();
-//            String result = findMemberByNameOrPhone();
+            String result = findMemberByNameOrPhone();
 
             System.out.println(result);
         } catch (IOException e)

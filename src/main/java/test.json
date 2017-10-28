@@ -1,16 +1,29 @@
 {
-  "result": [
-    {
-      "customerType": "personal",
-      "myTeamId": "10001",
-      "repertoryType": 1
-    },
-    {
-      "customerType": "dealer",
-      "myTeamId": "10001",
-      "repertoryType": 2
-    }
-  ],
+  "result": {
+    "applyId": "2c4dd862aa2f4ab1bb4a03590582f210",
+    "applyReason": "累",
+    "applyResult": 12,
+    "applyTitle": "请假申请",
+    "approveList": [
+      {
+        "approveName": "王五",
+        "approveResult": 21,
+        "approveSequence": 1
+      },
+      {
+        "approveName": "赵六",
+        "approveResult": 22,
+        "approveSequence": 2
+      }
+    ],
+    "beginDate": 1504022400000,
+    "createDate": 1504512870000,
+    "endDate": 1504108800000,
+    "imageList": [],
+    "proposerId": "89d9317fb3834353bcf2a507bee2eb82",
+    "proposerName": "张三",
+    "userImage": "/upload/img/user/head_portrait/89d9317fb3834353bcf2a507bee2eb82/d879affae9c746619040c2b069df4e51.jpg"
+  },
   "state": 1,
   "token": "c918451b778c44dc8ffcf7b7f6bb65621507604205889"
 }

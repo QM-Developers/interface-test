@@ -12,16 +12,18 @@ import java.util.concurrent.TimeUnit;
 
 public class CustomerAssistTest
 {
+    private static String BASE_URL = CoreConstant.URL_BASE_LOCAL;
+    
     public static void main(String[] args)
     {
         try
         {
 //            String result = saveCustomerAssist();
 //            String result = saveAssistImage();
-//            String result = listCustomerAssistByProposer();
+            String result = listCustomerAssistByProposer();
 //            String result = updateCustomerAssistResult();
 //            String result = listCustomerAssistByHelper();
-            String result = getCustomerAssist();
+//            String result = getCustomerAssist();
 
             System.out.println(result);
         } catch (IOException e)
@@ -32,7 +34,7 @@ public class CustomerAssistTest
 
     private static String getCustomerAssist() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/getCustomerAssist" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/getCustomerAssist" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -60,12 +62,12 @@ public class CustomerAssistTest
 
     private static String listCustomerAssistByHelper() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/listCustomerAssistByHelper" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/listCustomerAssistByHelper" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
 
-        params.put("userId", "0420cb22c06b43a488c39967779eecec");
+        params.put("userId", "03ef5797bae2466699d5efc970a8962f");
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
         params.put("pageNum", "1");
@@ -90,7 +92,7 @@ public class CustomerAssistTest
 
     private static String updateCustomerAssistResult() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateCustomerAssistResult" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/updateCustomerAssistResult" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -119,7 +121,7 @@ public class CustomerAssistTest
 
     private static String listCustomerAssistByProposer() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/listCustomerAssistByProposer" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/listCustomerAssistByProposer" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -148,7 +150,7 @@ public class CustomerAssistTest
 
     private static String saveAssistImage() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/saveAssistImage" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/saveAssistImage" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient();
         File file = new File("C:\\Users\\Administrator\\Desktop\\temp\\wallhaven-513297.jpg");
 
@@ -177,7 +179,7 @@ public class CustomerAssistTest
 
     private static String saveCustomerAssist() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/saveCustomerAssist" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/saveCustomerAssist" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -205,9 +207,9 @@ public class CustomerAssistTest
         params.put("myTeamId", "10001");
         params.put("assistTitle", "10001");
         params.put("assistReason", "10001");
-        params.put("customer", customer.toJSONString());
-        params.put("user", user.toJSONString());
-        params.put("image", image.toJSONString());
+        params.put("customer", customer);
+        params.put("user", user);
+        params.put("image", image);
 
         System.out.println(params.toJSONString());
 

@@ -13,6 +13,8 @@ import java.util.concurrent.TimeUnit;
 
 public class CustomerTest
 {
+    private static String BASE_URL = CoreConstant.URL_BASE_LOCAL;
+    
     public static void main(String[] args)
     {
         try
@@ -22,14 +24,14 @@ public class CustomerTest
 //            String result = updateCustomer();
 //            String result = getCustomer();
 //            String result = saveRepertoryLevel();
-            String result = listMerchandiser();
+//            String result = listMerchandiser();
 //            String result = listPromoter();
 //            String result = updateCustomerToPromoter();
 //            String result = updateCustomerToMerchandiser();
 //            String result = listAccountChecker();
 //            String result = saveCustomerAccount();
 //            String result = listCustomerAccountByProposer();
-//            String result = listCustomerAccountByChecker();
+            String result = listCustomerAccountByChecker();
 //            String result = getCustomerAccount();
 //            String result = updateCustomerAccountRefuse();
 //            String result = updateCustomerAccountAccept();
@@ -51,7 +53,7 @@ public class CustomerTest
 
     private static String listRepertoryLevel() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/listRepertoryLevel" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/listRepertoryLevel" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -78,7 +80,7 @@ public class CustomerTest
 
     private static String getCustomerAccount() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/getCustomerAccount" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/getCustomerAccount" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -106,7 +108,7 @@ public class CustomerTest
 
     private static String updateCustomerUnfreeze() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateCustomerUnfreeze" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/updateCustomerUnfreeze" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -134,7 +136,7 @@ public class CustomerTest
 
     private static String updateCustomerFreeze() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateCustomerFreeze" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/updateCustomerFreeze" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -162,7 +164,7 @@ public class CustomerTest
 
     private static String updateCustomerAccountAccept() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateCustomerAccountAccept" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/updateCustomerAccountAccept" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -190,7 +192,7 @@ public class CustomerTest
 
     private static String updateCustomerAccountRefuse() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateCustomerAccountRefuse" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/updateCustomerAccountRefuse" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -218,7 +220,7 @@ public class CustomerTest
 
     private static String listCustomerAccountByChecker() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/listCustomerAccountByChecker" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/listCustomerAccountByChecker" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -226,6 +228,9 @@ public class CustomerTest
         params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
+        params.put("requestStatus", "4");
+        params.put("pageNum", "1");
+        params.put("pageSize", "10");
 
         System.out.println(params.toJSONString());
 
@@ -245,7 +250,7 @@ public class CustomerTest
 
     private static String listCustomerAccountByProposer() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/listCustomerAccountByProposer" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/listCustomerAccountByProposer" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -253,6 +258,7 @@ public class CustomerTest
         params.put("userId", "03ef5797bae2466699d5efc970a8962f");
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
+        params.put("requestStatus", "2");
 
         System.out.println(params.toJSONString());
 
@@ -272,7 +278,7 @@ public class CustomerTest
 
     private static String saveCustomerAccount() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/saveCustomerAccount" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/saveCustomerAccount" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -305,7 +311,7 @@ public class CustomerTest
 
     private static String listAccountChecker() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/listAccountChecker" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/listAccountChecker" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -332,7 +338,7 @@ public class CustomerTest
 
     private static String updateCustomerToMerchandiser() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateCustomerToMerchandiser" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/updateCustomerToMerchandiser" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -361,7 +367,7 @@ public class CustomerTest
 
     private static String updateCustomerToPromoter() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateCustomerToPromoter" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/updateCustomerToPromoter" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -390,7 +396,7 @@ public class CustomerTest
 
     private static String listPromoter() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/listPromoter" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/listPromoter" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -417,7 +423,7 @@ public class CustomerTest
 
     private static String listMerchandiser() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/listMerchandiser" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/listMerchandiser" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -445,7 +451,7 @@ public class CustomerTest
 
     private static String saveRepertoryLevel() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/saveRepertoryLevel" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/saveRepertoryLevel" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -474,7 +480,7 @@ public class CustomerTest
 
     private static String saveCustomerRecord() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/saveCustomerRecord" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/saveCustomerRecord" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -508,7 +514,7 @@ public class CustomerTest
 
     private static String listCustomer() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/listCustomer" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/listCustomer" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -538,7 +544,7 @@ public class CustomerTest
 
     private static String updateCustomer() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateCustomer" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/updateCustomer" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -568,7 +574,7 @@ public class CustomerTest
 
     private static String getCustomer() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/getCustomer" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/getCustomer" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -596,7 +602,7 @@ public class CustomerTest
 
     private static void saveBackImage() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/saveBackImage" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/saveBackImage" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient();
         File file = new File("C:\\Users\\Administrator\\Desktop\\temp\\wallhaven-513297.jpg");
 
@@ -641,7 +647,7 @@ public class CustomerTest
 
     private static void saveHandImage() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/saveHandImage" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/saveHandImage" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient();
         File file = new File("C:\\Users\\Administrator\\Desktop\\temp\\wallhaven-513297.jpg");
 
@@ -687,7 +693,7 @@ public class CustomerTest
     private static void getCustomerIDCard() throws IOException
     {
         OkHttpClient okHttpClient = new OkHttpClient();
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/getCustomerIDCard" + CoreConstant.URL_SUFFIX + "?" +
+        String url = BASE_URL + "/s/getCustomerIDCard" + CoreConstant.URL_SUFFIX + "?" +
                 "userId=d88e28c3a0e6429f9f1d03ad99fabc61&token=" + IDGenerator.generator() + "&myTeamId=10001&" +
                 "path=/WEB-INF/upload/img/id_card/d88e28c3a0e6429f9f1d03ad99fabc61/07308795030843e88749b0a31932a543.jpg";
 

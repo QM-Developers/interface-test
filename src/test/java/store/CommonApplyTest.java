@@ -12,6 +12,8 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonApplyTest
 {
+    private static String BASE_URL = CoreConstant.URL_BASE_LOCAL;
+    
     public static void main(String[] args)
     {
         try
@@ -23,7 +25,8 @@ public class CommonApplyTest
 //            String result = listCommonApplyByProposer();
 //            String result = listCommonApplyByApprove();
 //            String result = updateCommonApplyAccept();
-            String result = updateCommonApplyRefuse();
+//            String result = updateCommonApplyRefuse();
+            String result = getCommonApply();
 
             System.out.println(result);
         } catch (IOException e)
@@ -32,9 +35,37 @@ public class CommonApplyTest
         }
     }
 
+    private static String getCommonApply() throws IOException
+    {
+        String url = BASE_URL + "/s/getCommonApply" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
+        params.put("myTeamId", "10001");
+        params.put("token", "1");
+        params.put("applyId", "2c4dd862aa2f4ab1bb4a03590582f210");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
     private static String updateCommonApplyRefuse() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateCommonApplyRefuse" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/updateCommonApplyRefuse" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -64,16 +95,17 @@ public class CommonApplyTest
 
     private static String listCommonApplyByApprove() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/listCommonApplyByApprove" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/listCommonApplyByApprove" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
 
-        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
+        params.put("userId", "0420cb22c06b43a488c39967779eecec");
         params.put("myTeamId", "10001");
         params.put("token", "1");
         params.put("pageNum", "1");
         params.put("pageSize", "10");
+        params.put("applyResult", "10");
 
         System.out.println(params.toJSONString());
 
@@ -93,7 +125,7 @@ public class CommonApplyTest
 
     private static String updateCommonApplyAccept() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateCommonApplyAccept" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/updateCommonApplyAccept" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -123,7 +155,7 @@ public class CommonApplyTest
 
     private static String listCommonApplyByProposer() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/listCommonApplyByProposer" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/listCommonApplyByProposer" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -133,6 +165,7 @@ public class CommonApplyTest
         params.put("token", "1");
         params.put("pageNum", "1");
         params.put("pageSize", "10");
+        params.put("applyResult", "12");
 
         System.out.println(params.toJSONString());
 
@@ -152,7 +185,7 @@ public class CommonApplyTest
 
     private static String saveCommonApplyImage() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/saveCommonApplyImage" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/saveCommonApplyImage" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient();
         File file = new File("C:\\Users\\Administrator\\Desktop\\temp\\wallhaven-513297.jpg");
 
@@ -181,7 +214,7 @@ public class CommonApplyTest
 
     private static String saveCommonApply() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/saveCommonApply" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/saveCommonApply" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -231,7 +264,7 @@ public class CommonApplyTest
 
     private static String findMemberList() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/findMemberList" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/findMemberList" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
@@ -259,7 +292,7 @@ public class CommonApplyTest
 
     private static String findDepartmentList() throws IOException
     {
-        String url = CoreConstant.URL_BASE_LOCAL + "/s/findDepartmentList" + CoreConstant.URL_SUFFIX;
+        String url = BASE_URL + "/s/findDepartmentList" + CoreConstant.URL_SUFFIX;
         OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
 
         JSONObject params = new JSONObject();
