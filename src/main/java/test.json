@@ -1,29 +1,36 @@
 {
   "result": {
-    "applyId": "2c4dd862aa2f4ab1bb4a03590582f210",
-    "applyReason": "累",
-    "applyResult": 12,
-    "applyTitle": "请假申请",
-    "approveList": [
+    "buyerMessage": "",
+    "createDate": 1508840891000,
+    "finishDate": 1508896294000,
+    "freight": 1.0,
+    "logisticsStatus": "",
+    "myTeamId": "10001",
+    "orderCount": 100.0,
+    "orderId": "1ee46bbd9f9b4462b2256aac46f0d3e1",
+    "orderList": [
       {
-        "approveName": "王五",
-        "approveResult": 21,
-        "approveSequence": 1
-      },
-      {
-        "approveName": "赵六",
-        "approveResult": 22,
-        "approveSequence": 2
+        "buyNum": 5,
+        "goodsImage": "/upload/img/user/space/89d9317fb3834353bcf2a507bee2eb82/f4845d04353643989e87cb129e01670d.jpg",
+        "goodsName": "【哼哼动保】10%酸化阿莫西林可溶性粉 100g/袋",
+        "goodsPrice": 20.0,
+        "refundNum": 5,
+        "standardId": "8e6aabae569e44ca80db3115372aa1a4",
+        "standardName": "100g/袋"
       }
     ],
-    "beginDate": 1504022400000,
-    "createDate": 1504512870000,
-    "endDate": 1504108800000,
-    "imageList": [],
-    "proposerId": "89d9317fb3834353bcf2a507bee2eb82",
-    "proposerName": "张三",
-    "userImage": "/upload/img/user/head_portrait/89d9317fb3834353bcf2a507bee2eb82/d879affae9c746619040c2b069df4e51.jpg"
+    "orderNumber": "69741360",
+    "orderStatus": 107,
+    "orderStatusBefore": 108,
+    "paymentStatus": 111,
+    "paymentType": 10,
+    "refundAcceptDate": 1508840891000,
+    "refundMessage": "不想买了",
+    "sellerMessage": "",
+    "shoppingAddress": "{\"address\":\"地址\",\"phone\":\"电话\",\"contact\":\"name\"}",
+    "userId": "0bb4b24df33948cfb68e61c1d5c1c75d",
+    "userName": "alisa"
   },
   "state": 1,
-  "token": "c918451b778c44dc8ffcf7b7f6bb65621507604205889"
+  "token": "41ca5302c6ff4e85819cbaceff1ee9e11508383995465"
 }

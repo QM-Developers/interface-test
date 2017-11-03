@@ -4,10 +4,25 @@
     <list default="true" id="b805908b-cd67-4ee0-8755-f10b69f82ef8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test.json" afterPath="$PROJECT_DIR$/src/main/java/test.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/common/GoodsBrowseTest.java" afterPath="$PROJECT_DIR$/src/test/java/common/GoodsBrowseTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/common/LoginTest.java" afterPath="$PROJECT_DIR$/src/test/java/common/LoginTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/common/MyOrderTest.java" afterPath="$PROJECT_DIR$/src/test/java/common/MyOrderTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/common/MyTest.java" afterPath="$PROJECT_DIR$/src/test/java/common/MyTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/common/PasswordTest.java" afterPath="$PROJECT_DIR$/src/test/java/common/PasswordTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/store/BranchTest.java" afterPath="$PROJECT_DIR$/src/test/java/store/BranchTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/store/CommonApplyTest.java" afterPath="$PROJECT_DIR$/src/test/java/store/CommonApplyTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/store/CustomerAssistTest.java" afterPath="$PROJECT_DIR$/src/test/java/store/CustomerAssistTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/store/CustomerTest.java" afterPath="$PROJECT_DIR$/src/test/java/store/CustomerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/store/MyTeamTest.java" afterPath="$PROJECT_DIR$/src/test/java/store/MyTeamTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/store/CustomerVisitTest.java" afterPath="$PROJECT_DIR$/src/test/java/store/CustomerVisitTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/store/FinanceOrderTest.java" afterPath="$PROJECT_DIR$/src/test/java/store/FinanceOrderTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/store/FollowerOrderTest.java" afterPath="$PROJECT_DIR$/src/test/java/store/FollowerOrderTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/store/ManageTest.java" afterPath="$PROJECT_DIR$/src/test/java/store/ManageTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/store/ManageUnitTest.java" afterPath="$PROJECT_DIR$/src/test/java/store/ManageUnitTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/store/RepertoryApplyTest.java" afterPath="$PROJECT_DIR$/src/test/java/store/RepertoryApplyTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/store/RepertoryIncomeTest.java" afterPath="$PROJECT_DIR$/src/test/java/store/RepertoryIncomeTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/store/RepertoryRecordTest.java" afterPath="$PROJECT_DIR$/src/test/java/store/RepertoryRecordTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/store/SalesOrderTest.java" afterPath="$PROJECT_DIR$/src/test/java/store/SalesOrderTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/store/UserPlaceTest.java" afterPath="$PROJECT_DIR$/src/test/java/store/UserPlaceTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -61,12 +76,22 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyTeamTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/store/MyTeamTest.java">
+    <leaf>
+      <file leaf-file-name="BranchTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/store/BranchTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+            <state relative-caret-position="336">
+              <caret line="23" column="47" lean-forward="false" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PasswordTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/common/PasswordTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="37" column="60" lean-forward="false" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -93,6 +118,7 @@
       <find>downAsynFile</find>
       <find>6551a728c46d4e5aa1574c7f0b8c4134</find>
       <find>CoreConstant.URL_BASE_SERVER</find>
+      <find>refundA</find>
       <find>CoreConstant.URL_BASE_LOCAL</find>
     </findStrings>
     <replaceStrings>
@@ -461,40 +487,41 @@
         <option value="$PROJECT_DIR$/src/test/java/password/PasswordTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/password/ExperienceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/password/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/common/PasswordTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/common/PermissionModelTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/common/GoodsBrowseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/common/ShoppingCarTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/common/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/common/RegisterTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/store/CustomerFollowTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/store/UserBreedTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/store/FarmerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/store/ManageUnitTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/store/RepertoryRecordTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/store/RepertoryApplyTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/store/RepertoryIncomeTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/store/CustomerVisitTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/store/GoodsManagerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/store/BranchTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/store/FreightTempTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/RequestUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/rewrite/HttpCallback.java" />
         <option value="$PROJECT_DIR$/src/main/java/rewrite/ReadImageCallback.java" />
-        <option value="$PROJECT_DIR$/src/test/java/common/MyTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/store/FollowerOrderTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/store/UserPlaceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/store/SalesOrderTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/common/MyOrderTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/store/FinanceOrderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/CryptographyUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/store/ManageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/common/MyOrderProofTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/store/CustomerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/store/CustomerAssistTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/store/CommonApplyTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test.json" />
         <option value="$PROJECT_DIR$/src/test/java/store/MyTeamTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/store/ManageUnitTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/common/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/store/ManageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/store/RepertoryApplyTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/store/CustomerAssistTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/store/UserPlaceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/store/CustomerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/store/CustomerVisitTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/common/GoodsBrowseTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/store/RepertoryIncomeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/store/RepertoryRecordTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/store/CommonApplyTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/store/FinanceOrderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/store/FollowerOrderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/store/SalesOrderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/common/MyTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/common/MyOrderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test.json" />
+        <option value="$PROJECT_DIR$/src/test/java/store/BranchTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/common/PasswordTest.java" />
       </list>
     </option>
   </component>
@@ -504,11 +531,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="113" />
-    <option name="y" value="38" />
-    <option name="width" value="1545" />
-    <option name="height" value="937" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="421" />
+    <option name="y" value="20" />
+    <option name="width" value="1110" />
+    <option name="height" value="1010" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -528,7 +555,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -545,19 +574,6 @@
               <item name="interface" type="b2602c69:ProjectViewProjectNode" />
               <item name="interface" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="interface" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interface" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="interface" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interface" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -566,6 +582,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interface" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interface" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="interface" type="b2602c69:ProjectViewProjectNode" />
@@ -579,9 +603,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -590,7 +612,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../backend" />
     <property name="SearchEverywhereHistoryKey" value="FileOutputStream&#9;PSI&#9;JAVA://java.io.FileOutputStream&#10;updateCommonApplyAccept&#9;PSI&#9;JAVA://store.RepertoryIncomeTest#updateCommonApplyAccept" />
   </component>
   <component name="RecentsManager">
@@ -611,15 +633,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyTeamTest">
-    <configuration name="CommonApplyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.PasswordTest">
+    <configuration name="BranchTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="store.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="store.CommonApplyTest" />
+      <option name="MAIN_CLASS_NAME" value="store.BranchTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -631,14 +653,14 @@
       <module name="interface_test" />
       <envs />
     </configuration>
-    <configuration name="CustomerAssistTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="FollowerOrderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="store.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="store.CustomerAssistTest" />
+      <option name="MAIN_CLASS_NAME" value="store.FollowerOrderTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -650,33 +672,14 @@
       <module name="interface_test" />
       <envs />
     </configuration>
-    <configuration name="CustomerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="store.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="store.CustomerTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="interface_test" />
-      <envs />
-    </configuration>
-    <configuration name="MyOrderProofTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MyOrderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="common.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="common.MyOrderProofTest" />
+      <option name="MAIN_CLASS_NAME" value="common.MyOrderTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -688,14 +691,33 @@
       <module name="interface_test" />
       <envs />
     </configuration>
-    <configuration name="MyTeamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="PasswordTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="common.PasswordTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="interface_test" />
+      <envs />
+    </configuration>
+    <configuration name="SalesOrderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="store.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="store.MyTeamTest" />
+      <option name="MAIN_CLASS_NAME" value="store.SalesOrderTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -788,19 +810,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.MyOrderProofTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.CustomerTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.CommonApplyTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.CustomerAssistTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.MyTeamTest" />
+      <item index="0" class="java.lang.String" itemvalue="Application.FollowerOrderTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.MyOrderTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SalesOrderTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.BranchTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.PasswordTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MyTeamTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.CommonApplyTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.CustomerAssistTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.CustomerTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.MyOrderProofTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.PasswordTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.BranchTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.MyOrderTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.SalesOrderTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.FollowerOrderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -832,15 +854,23 @@
       <workItem from="1509092722658" duration="19000" />
       <workItem from="1509151800017" duration="3793000" />
       <workItem from="1509158481647" duration="7638000" />
+      <workItem from="1509240015894" duration="9734000" />
+      <workItem from="1509325308960" duration="4454000" />
+      <workItem from="1509331437625" duration="8853000" />
+      <workItem from="1509412516694" duration="7159000" />
+      <workItem from="1509502748634" duration="10046000" />
+      <workItem from="1509582890147" duration="7861000" />
+      <workItem from="1509669693659" duration="8045000" />
+      <workItem from="1509688991158" duration="20000" />
+      <workItem from="1509690281491" duration="1939000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183166000" />
+    <option name="totallyTimeSpent" value="241277000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -850,20 +880,20 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48813984" sideWeight="0.5050505" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23134328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20895523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.4921875" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3923913" sideWeight="0.4949495" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31086957" sideWeight="0.4949495" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -881,32 +911,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/common/MyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/common/PasswordTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="45" column="10" lean-forward="false" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/common/ExperienceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="48" column="5" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="48" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/common/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -970,31 +979,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/common/GoodsBrowseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/common/ExperienceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-552">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/common/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="110" column="19" lean-forward="false" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1012,20 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/store/ManageUnitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/store/RepertoryApplyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="91" column="99" lean-forward="false" selection-start-line="91" selection-start-column="99" selection-end-line="91" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/store/UserBreedTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2688">
@@ -1033,25 +1007,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/store/RepertoryIncomeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="51" column="31" lean-forward="false" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/io/FileOutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
           <caret line="56" column="7" lean-forward="true" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/store/BranchTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2712">
-          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1090,13 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/common/PasswordTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/7ebc06b0cc7c2752a4883747e2c70b2b301df9c0/okhttp-3.6.0-sources.jar!/okhttp3/Callback.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1115,41 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="95" column="66" lean-forward="false" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/store/RepertoryRecordTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-353">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/store/FollowerOrderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/store/UserPlaceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/common/MyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/store/SalesOrderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1181,70 +1098,174 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/common/MyOrderTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/store/MyTeamTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5424">
-          <caret line="232" column="0" lean-forward="false" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+        <state relative-caret-position="312">
+          <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/common/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/reflect/Type.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="38" column="6" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba/fastjson/1.2.30/477cbda5c25e3136c9e99b81b4aa8da3bd30d5ab/fastjson-1.2.30-sources.jar!/com/alibaba/fastjson/serializer/SerializeConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="623" column="26" lean-forward="false" selection-start-line="623" selection-start-column="26" selection-end-line="623" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/store/ManageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        <state relative-caret-position="-24">
+          <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/store/FinanceOrderTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/store/ManageUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/store/CustomerVisitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/store/CustomerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="232" column="24" lean-forward="false" selection-start-line="232" selection-start-column="24" selection-end-line="232" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="2640">
+          <caret line="116" column="36" lean-forward="false" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/store/CustomerAssistTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="14" column="64" lean-forward="false" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
-          <folding />
+        <state relative-caret-position="360">
+          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test.json">
+    <entry file="file://$PROJECT_DIR$/src/test/java/store/UserPlaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/store/CustomerVisitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/common/GoodsBrowseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="69" column="68" lean-forward="false" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/store/RepertoryIncomeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/store/RepertoryApplyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/store/CustomerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/store/CommonApplyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="47" column="27" lean-forward="false" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+        <state relative-caret-position="343">
+          <caret line="44" column="54" lean-forward="false" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="110" column="19" lean-forward="false" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/store/FollowerOrderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/store/FinanceOrderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/store/SalesOrderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/common/MyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/common/MyOrderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="59" column="26" lean-forward="false" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/store/RepertoryRecordTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/store/MyTeamTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/store/BranchTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        <state relative-caret-position="336">
+          <caret line="23" column="47" lean-forward="false" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/common/PasswordTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="37" column="60" lean-forward="false" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
           <folding />
         </state>
       </provider>

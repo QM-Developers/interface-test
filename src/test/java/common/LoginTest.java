@@ -32,7 +32,7 @@ public class LoginTest
 
         JSONObject params = new JSONObject();
 
-        params.put("userPhone", "13688888888");
+        params.put("userPhone", "13311112222");
         params.put("userPassword", CryptographyUtil.md5("dggadmin", null));
         params.put("myTeamId", "10001");
 

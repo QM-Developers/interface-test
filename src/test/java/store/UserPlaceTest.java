@@ -24,10 +24,10 @@ public class UserPlaceTest
 //            {
 //                String result = saveUserPlace();
 //                String result = uploadPlaceCertificate();
-//                String result = uploadPlaceEnvironment();
+                String result = uploadPlaceEnvironment();
 //                System.out.println(result);
 //            }
-            String result = getUserPlace();
+//            String result = getUserPlace();
 //            String result = removePlaceImage();
 //            String result = removeUserPlace();
 
@@ -133,7 +133,7 @@ public class UserPlaceTest
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
         params.put("img", "图片");
-        params.put("userPlaceId", "daab4edac0fa48d5b62f6c241f5dd590");
+        params.put("userPlaceId", "334ae9e94aeb45bfb05320edf0eb7a7e");
 
         System.out.println(params.toJSONString());
         params.remove("img");
@@ -252,7 +252,7 @@ public class UserPlaceTest
         params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
         params.put("token", IDGenerator.generator());
         params.put("myTeamId", "10001");
-        params.put("customerId", "94a397ea0eae4632994108c02fe3b762");
+        params.put("customerId", "613dcfbf5ceb4b5893849bf454a3244d");
         params.put("pageNum", "1");
         params.put("pageSize", "10");
 

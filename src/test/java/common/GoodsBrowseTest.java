@@ -14,9 +14,9 @@ public class GoodsBrowseTest
     {
         try
         {
-//            String result = findGoodsType();
+            String result = findGoodsType();
 //            String result = findGoodsList();
-            String result = findGoodsDetail();
+//            String result = findGoodsDetail();
 //            String result = findGoodsByKeyword();
 
             System.out.println(result);

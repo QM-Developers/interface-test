@@ -45,7 +45,7 @@ public class CommonApplyTest
         params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
         params.put("myTeamId", "10001");
         params.put("token", "1");
-        params.put("applyId", "2c4dd862aa2f4ab1bb4a03590582f210");
+        params.put("applyId", "af2b01d9792a4f9db1c6c4dd2e4a8505");
 
         System.out.println(params.toJSONString());
 
@@ -105,7 +105,7 @@ public class CommonApplyTest
         params.put("token", "1");
         params.put("pageNum", "1");
         params.put("pageSize", "10");
-        params.put("applyResult", "10");
+//        params.put("applyResult", "10");
 
         System.out.println(params.toJSONString());
 
@@ -165,7 +165,7 @@ public class CommonApplyTest
         params.put("token", "1");
         params.put("pageNum", "1");
         params.put("pageSize", "10");
-        params.put("applyResult", "12");
+        params.put("applyResult", "13");
 
         System.out.println(params.toJSONString());
 

@@ -17,8 +17,8 @@ public class RepertoryRecordTest
         {
 //            String result = listRepertoryRecord();
 //            String result = updateRepertory();
-//            String result = getRepertoryRecord();
-            String result = listCurrentRepertoryRecord();
+            String result = getRepertoryRecord();
+//            String result = listCurrentRepertoryRecord();
 
             System.out.println(result);
         } catch (IOException e)

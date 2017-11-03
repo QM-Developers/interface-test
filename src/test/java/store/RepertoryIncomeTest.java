@@ -17,8 +17,8 @@ public class RepertoryIncomeTest
 //            String result = saveRepertoryIncome();
 //            String result = listCurrentRepertoryIncome();
 //            String result = listRepertoryIncome();
-//            String result = getRepertoryIncome();
-            String result = listRepertoryApply();
+            String result = getRepertoryIncome();
+//            String result = listRepertoryApply();
 
             System.out.println(result);
         } catch (IOException e)

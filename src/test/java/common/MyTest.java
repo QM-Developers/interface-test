@@ -16,22 +16,22 @@ import java.util.concurrent.TimeUnit;
 
 public class MyTest
 {
-    private static final String BASE_URL = CoreConstant.URL_BASE_SERVER;
+    private static final String BASE_URL = CoreConstant.URL_BASE_LOCAL;
     
     public static void main(String[] args)
     {
         try
         {
 //            uploadHeadPortrait();
-            getHeadPortrait();
-//            String result = findMyInfo();
+//            getHeadPortrait();
+            String result = findMyInfo();
 //            String result = findMyAddress();
 //            String result = addMyAddress();
 //            String result = updateMyAddress();
 //            String result = findMyDefaultAddress();
 //            String result = deleteMyAddress();
 
-//            System.out.println(result);
+            System.out.println(result);
         } catch (IOException e)
         {
             e.printStackTrace();

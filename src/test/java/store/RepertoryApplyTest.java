@@ -19,10 +19,10 @@ public class RepertoryApplyTest
 //            String result = listRepertoryApplyByProposer();
 //            String result = listRepertoryApply();
 //            String result = saveRepertoryApply();
-//            String result = listRepertoryApplyByApprover();
+            String result = listRepertoryApplyByApprover();
 //            String result = listRepertoryChecker();
 //            String result = updateRepertoryApplyAccept();
-            String result = updateRepertoryApplyFinish();
+//            String result = updateRepertoryApplyFinish();
 
             System.out.println(result);
         } catch (IOException e)

@@ -19,16 +19,106 @@ public class ManageTest
 //            String result = findTeamAndMemberCount();
 //            String result = findDepartmentList();
 //            String result = findMemberList();
+            String result = listMemberByKeyword();
 //            String result = findDepartmentInfo();
 //            String result = findMemberInfo();
-            String result = addDepartment();
+//            String result = addDepartment();
 //            String result = listQmPermission();
+//            String result = updateMemberFreeze();
+//            String result = updateMemberUnfreeze();
 
             System.out.println(result);
         } catch (IOException e)
         {
             e.printStackTrace();
         }
+    }
+
+    private static String listMemberByKeyword() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/listMemberByKeyword" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
+        params.put("myTeamId", "10001");
+        params.put("token", "1");
+        params.put("pageNum", "1");
+        params.put("pageSize", "10");
+        params.put("keyword", "王");
+        params.put("departmentId", "4bc0ec2d68a444e7a584b9f8d03cbc44");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String updateMemberUnfreeze() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateMemberUnfreeze" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
+        params.put("myTeamId", "10001");
+        params.put("token", "1");
+        params.put("memberId", "0bb4b24df33948cfb68e61c1d5c1c75d");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
+    }
+
+    private static String updateMemberFreeze() throws IOException
+    {
+        String url = CoreConstant.URL_BASE_LOCAL + "/s/updateMemberFreeze" + CoreConstant.URL_SUFFIX;
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).build();
+
+        JSONObject params = new JSONObject();
+
+        params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
+        params.put("myTeamId", "10001");
+        params.put("token", "1");
+        params.put("memberId", "0bb4b24df33948cfb68e61c1d5c1c75d");
+
+        System.out.println(params.toJSONString());
+
+        FormBody.Builder builder = new FormBody.Builder();
+
+        for (String key : params.keySet())
+            builder.add(key, params.get(key).toString());
+
+        Request request = new Request.Builder().post(builder.build()).url(url).build();
+        Call call = okHttpClient.newCall(request);
+        Response response = call.execute();
+        if (response.isSuccessful())
+            return response.body().string();
+        else
+            return String.valueOf(response.code());
     }
 
     private static String listQmPermission() throws IOException
@@ -167,6 +257,9 @@ public class ManageTest
         params.put("userId", "9f6bc79d769342f1b90ed0b532b870f2");
         params.put("myTeamId", "10001");
         params.put("token", "1");
+        params.put("pageNum", "1");
+        params.put("pageSize", "10");
+        params.put("departmentId", "4bc0ec2d68a444e7a584b9f8d03cbc44");
 
         System.out.println(params.toJSONString());
 

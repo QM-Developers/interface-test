@@ -14,13 +14,13 @@ public class MyOrderTest
     {
         try
         {
-            String result = saveMyOrder();
+//            String result = saveMyOrder();
 //            String result = listMyOrderSelective();
 //            String result = updateSign();
 //            String result = listFreightTemp();
 //            String result = updateRefund();
 //            String result = updateRefundCancel();
-//            String result = getMyOrder();
+            String result = getMyOrder();
 
             System.out.println(result);
         } catch (IOException e)
@@ -188,7 +188,6 @@ public class MyOrderTest
         params.put("userId", "0bb4b24df33948cfb68e61c1d5c1c75d");
         params.put("myTeamId", "10001");
         params.put("token", "1");
-        params.put("orderStatus", "108");
         params.put("pageNum", "1");
         params.put("pageSize", "10");
 
@@ -217,6 +216,11 @@ public class MyOrderTest
 
         JSONArray jArr = new JSONArray();
         JSONObject goods1 = new JSONObject();
+        JSONObject address = new JSONObject();
+        address.put("contact","name");
+        address.put("address","地址");
+        address.put("phone","电话");
+
         goods1.put("goodsId","bae0a50f935248cfa03a0e0cbffd2dda");
         goods1.put("goodsNum","5");
         goods1.put("standardId","8e6aabae569e44ca80db3115372aa1a4");
@@ -227,7 +231,7 @@ public class MyOrderTest
         params.put("token", "1");
         params.put("freight", "1");
         params.put("paymentType", "20");
-        params.put("userAddress", "133");
+        params.put("shoppingAddress", address);
         params.put("buyerMessage", "12112");
         params.put("goods", jArr.toJSONString());
 

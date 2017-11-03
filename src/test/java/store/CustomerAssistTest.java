@@ -20,10 +20,10 @@ public class CustomerAssistTest
         {
 //            String result = saveCustomerAssist();
 //            String result = saveAssistImage();
-            String result = listCustomerAssistByProposer();
+//            String result = listCustomerAssistByProposer();
 //            String result = updateCustomerAssistResult();
 //            String result = listCustomerAssistByHelper();
-//            String result = getCustomerAssist();
+            String result = getCustomerAssist();
 
             System.out.println(result);
         } catch (IOException e)
